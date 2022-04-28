@@ -42,12 +42,14 @@
     }
     .lead-img {
         margin: 0 auto;
+        
     }
     .lead-img img {
         position: relative;
         top: 2rem;
         max-width: 25rem;
         max-height: 25rem;
+        padding-bottom: 3rem;
     }
 }
 
