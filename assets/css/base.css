@@ -7,6 +7,7 @@
     --light-pink: #B030B0;
     --white: #FFF;
     --light-grey: #e0e0e0;
+    --darker-gray: #cccbcb;
     --gutter: 3rem;
 }
 
@@ -127,4 +128,11 @@ p {
 
 .navbar-spacing {
     height: 6rem;
+}
+
+@media (max-width: 1000px) {
+    .navbar-links li a {
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
 }
