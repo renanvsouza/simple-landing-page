@@ -6,9 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="./assets/css/mobile-menu.css">
-	<link rel="stylesheet" href="./assets/css/components.css">
-	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/styles.css">
 	<title>Landing Page</title>
 </head>
 
@@ -37,8 +35,8 @@
 					<li><a href="#contact">Contato</a></li>
 				</ul>
 			</div>
-			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-			<a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()"><i class="icon fa-solid fa-bars"></i></a>
+			<a href="javascript:void(0);" class="hamburger-icon">
+				<i class="icon fa-solid fa-bars"></i></a>
 		</div>
 	</nav>
 
@@ -214,26 +212,7 @@
 		</div>
 	</footer>
 
-	<script>
-		function myFunction() {
-			const links = document.querySelector('.mobile-links')
-			const icon = document.querySelector('.icon')
-			if (links.style.display === "block") {
-				links.style.display = "none";
-			} else {
-				links.style.display = "block";
-			}
-			if (icon.classList.contains('fa-bars')) {
-				icon.classList.remove('fa-bars')
-				icon.classList.add('fa-xmark')
-			} else if (icon.classList.contains('fa-xmark')) {
-				icon.classList.remove('fa-xmark')
-				icon.classList.add('fa-bars')
-			} else {
-				icon.classList.add('fa-bars')
-			}
-		}
-	</script>
+	<script src="./assets/js/mobileMenu.js"></script>
 
 </body>
 
