@@ -187,7 +187,6 @@ p {
     }
     .lead-img {
         margin: 0 auto;
-        
     }
     .lead-img img {
         position: relative;
@@ -414,7 +413,7 @@ p {
         width: 100%;
     }
     .contact-form fieldset {
-        padding: 0.5rem;
+        padding: 0;
     }
 }
 
@@ -427,7 +426,6 @@ footer {
 footer a:visited {
     color: white;
 }
-
 
 .hamburger-icon {
     display: block;
@@ -480,4 +478,26 @@ footer a:visited {
     }
 }
 
+@media (max-width: 400px) {
+    .lead-text h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    h3 {
+       font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .lead-text h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    .lead-img {
+        padding: 0;
+    }
+}
 
